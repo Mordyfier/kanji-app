@@ -12,16 +12,41 @@ code {
     monospace;
 }
 
+nav {
+  height: 100px;
+  margin: 0;
+  background-color: midnightblue;
+}
+h1 {
+  margin: 0;
+}
+nav > h1 {
+  color: whitesmoke;
+  font-size: 50px;
+  text-align: center;
+}
+
 #kanji-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 75%;
+  margin: 50px auto 0;
 }
 #kanji-card {
-  margin: 5px;
-  background-color: purple;
+  margin: 20px;
+  background-color: steelblue;
   color: white;
   border-radius: 7px;
-  width: 50px;
   text-align: center;
+  font-size: 30px;
+  user-select: none;
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+}
+#kanji-card:hover {
+  background-color: yellow;
+  color:black;
+  cursor: pointer;
 }

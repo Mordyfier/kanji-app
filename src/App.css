@@ -1,9 +1,0 @@
-#kanji-cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-#kanji-card {
-    width: 50px;
-}
