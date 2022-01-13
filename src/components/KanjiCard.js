@@ -23,7 +23,7 @@ async function speakKanji(kanji) {
             },
             voice: {
                 languageCode: "ja-JP",
-                name: "ja-JP-Wavenet-A"
+                name: "ja-JP-Standard-A"
             }})
         });
         const data = await response.json()
