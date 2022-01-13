@@ -34,7 +34,7 @@ async function speakKanji(kanji) {
 export default function KanjiCard(props) {
     const kanji = props.kanji;
     return (
-        <div id="kanji-card" onClick={() => {speakKanji(kanji);}} onTouchStart={() => {speakKanji(kanji);}}>
+        <div id="kanji-card" onClick={() => {speakKanji(kanji);}} onTouchEnd={() => {speakKanji(kanji);}}>
             <h1>{kanji}</h1>
         </div>
     )
