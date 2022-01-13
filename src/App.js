@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import KanjiCard from "./components/KanjiCard";
 
-function App() {
+
+
+export default function App() {
+  const [kanji, setKanji] = useState("");
+  let render;
+  useEffect(() => {
+    render = document.getElementById('render');
+    render.addEventListener('click', async () => {
+      const response = await fetch('https://kanjiapi.dev/v1/kanji/joyo');
+      const data = await response.json();
+      const cards = data.map(x => <KanjiCard key={x} kanji={x} />)
+      setKanji(cards);
+    })
+      
+    }, [])
+    
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="kanji-cards">
+      {kanji}
     </div>
-  );
+  )
 }
-
-export default App;

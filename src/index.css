@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#kanji-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#kanji-card {
+  margin: 5px;
+  background-color: purple;
+  color: white;
+  border-radius: 7px;
+  width: 50px;
+  text-align: center;
+}
