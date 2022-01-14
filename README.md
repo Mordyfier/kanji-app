@@ -1,5 +1,5 @@
 # Kanji の Study
-### (You see what I did there?)
+### (😉)
 
 [Click here](https://mordyfier.github.io/kanji-app/)
 
