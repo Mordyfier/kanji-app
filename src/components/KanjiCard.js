@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Config from '../config';
 
 const credentials = Config();
@@ -24,17 +24,18 @@ async function speakKanji(kanji) {
             voice: {
                 languageCode: "ja-JP",
                 name: "ja-JP-Standard-A"
-            }})
-        });
-        const data = await response.json()
-        const snd = new Audio("data:audio/wav;base64," + data.audioContent);
-        setTimeout(() => snd.play(), 200); 
+            }
+        })
+    });
+    const data = await response.json()
+    const snd = new Audio("data:audio/wav;base64," + data.audioContent);
+    snd.play() 
 }
 
 export default function KanjiCard(props) {
     const kanji = props.kanji;
     return (
-        <div id="kanji-card" onClick={() => {speakKanji(kanji);}}>
+        <div id="kanji-card" onClick={async () => {await speakKanji(kanji);}}>
             <h1>{kanji}</h1>
         </div>
     )
