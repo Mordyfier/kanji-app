@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/kanji-app/static/css/main.5c2b4e2f.css",
-    "main.js": "/kanji-app/static/js/main.8a04c3eb.js",
+    "main.js": "/kanji-app/static/js/main.e8fa1460.js",
     "static/js/787.369f09b2.chunk.js": "/kanji-app/static/js/787.369f09b2.chunk.js",
     "index.html": "/kanji-app/index.html",
     "main.5c2b4e2f.css.map": "/kanji-app/static/css/main.5c2b4e2f.css.map",
-    "main.8a04c3eb.js.map": "/kanji-app/static/js/main.8a04c3eb.js.map",
+    "main.e8fa1460.js.map": "/kanji-app/static/js/main.e8fa1460.js.map",
     "787.369f09b2.chunk.js.map": "/kanji-app/static/js/787.369f09b2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c2b4e2f.css",
-    "static/js/main.8a04c3eb.js"
+    "static/js/main.e8fa1460.js"
   ]
 }
